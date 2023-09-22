@@ -24,7 +24,31 @@
              width: 280px;
         }
     }
+    .advantages {
+        padding: 50px 0 50px;
+        &__header {
+            font-size: 26px;
+        }
+        &__wrapper {
+            margin-top: 50px;
+            flex-direction: column;
+        }
+        &__icon {
+            width: 100%;
+        }
+        &__icon + &__icon {
+            margin-top: 20px;
+        }
+        &__title {
+            margin-top: 10px;
+        }
+        &__descr {
+            margin-top: 10px;
+        }
+    }
+
 }
+
 
 @media (max-width: 768px) {
     .header {
@@ -49,14 +73,32 @@
     }
 
     .header {
-        flex-direction: column;
+        /**flex-direction: column;**/
         &__phone {
             display: none;
         }
 
         &__contacts {
-            align-self: flex-end;
-            margin-top: 15px;
+            display: none;
+            /**align-self: flex-end;
+            margin-top: 30px;**/
+        }
+
+        &__call-xs {
+            display: block;
+            text-align: center;
+            width: 40px;
+            height: 38px;
+            background-color: #c70101;
+            border-radius: 25%;
+            position: absolute;
+            right: 5px;
+            top: 0px;
+            i {
+                font-size: 35px;
+                color: #fff;
+            }
+            
         }
     }
 
@@ -91,13 +133,11 @@
         &__link {
             font-size: 14px;
         }
-
-        .button {
-            &_main {
-                margin-top: 40px;
-            };
-        }
     }
 
-
+    .button {
+        &_main {
+            margin-top: 40px;
+        }
+    }
 }
