@@ -24,11 +24,11 @@
              width: 280px;
         }
     }
+    .title {
+        font-size: 26px;
+    }
     .advantages {
         padding: 50px 0 50px;
-        &__header {
-            font-size: 26px;
-        }
         &__wrapper {
             margin-top: 50px;
             flex-direction: column;
@@ -59,7 +59,6 @@
 
     .promo {
         padding: 21px 0 60px 0;
-
         &__wrapper {
             align-items: center;
             margin-top: 75px;
@@ -139,5 +138,8 @@
         &_main {
             margin-top: 40px;
         }
+    }
+    .title {
+        font-size: 20px;
     }
 }
