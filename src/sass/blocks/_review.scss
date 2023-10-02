@@ -1,0 +1,36 @@
+.review {
+    padding-bottom: 48px;
+    &__item {
+        padding: 20px;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color:#fff7f4; 
+        border-radius: 20px;
+    }
+    &__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    &__block {
+        margin-left: 60px;
+    }
+    &__client {
+        color: #0D0D0D;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__count {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__text {
+        color: #0D0D0D;
+        padding-right: 50px;
+        margin-top: 10px;
+        font-weight: 300;
+    }
+}
