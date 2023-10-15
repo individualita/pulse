@@ -6,8 +6,10 @@
         color: #FFF;
         font-size: 20px;
         font-weight: 500;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        animation-delay: 1s;
     }
-
     .error {
         border: 1px solid red;
     }

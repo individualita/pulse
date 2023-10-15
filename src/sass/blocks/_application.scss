@@ -1,7 +1,10 @@
 .application {
     background-color: #f6f6f6;
-    padding: 40px 0;
+    padding: 40px 0 60px;
     &__wrapper {
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 1s;
         display: flex;
         justify-content: space-between;
     }

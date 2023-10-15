@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     width: 300px;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1.5s;
     input {
         height: 50px;
         border-radius: 5px;

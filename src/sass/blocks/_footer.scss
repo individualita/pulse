@@ -11,6 +11,9 @@
         width: 400px;
         height: 250px;
         background-color: $main-color;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        animation-delay: 1s;
     }
     &__addr {
         margin-bottom: 36px;
