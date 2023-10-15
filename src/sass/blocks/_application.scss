@@ -1,0 +1,45 @@
+.application {
+    background-color: #f6f6f6;
+    padding: 40px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__section {
+        img {
+            width: 545px;
+        }  
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100%; /*минимальная высота для flexbox чтобы прижать контент снизу */
+        padding-top: 35px;
+        margin-left: 40px;
+    }
+    &__subtitle {
+        font-size: 25px;
+        font-weight: 500;
+        color: $main-color;
+        text-align: center;
+    }
+    &__descr {
+        color: #0d0d0d;
+        font-weight: 300;
+        margin-top: 25px;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 300px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 100%;
+        }
+    }
+}
