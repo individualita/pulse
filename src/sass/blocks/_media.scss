@@ -3,9 +3,6 @@
 }
 
 @media (max-width: 992px) {
-    .container {
-        padding: 0 25px;
-    }
     .promo {
         &__header {
             font-size: 38px;
@@ -51,12 +48,6 @@
 
 
 @media (max-width: 768px) {
-    .header {
-        &__official {
-            display: none;
-        }
-    }
-
     .promo {
         padding: 21px 0 60px 0;
         &__wrapper {
@@ -67,57 +58,55 @@
 }
 
 @media (max-width: 576px) {
-    .container {
-        padding: 0 5px;
-    }
-
     .header {
-        /**flex-direction: column;**/
-        &__phone {
+        &__official {
             display: none;
         }
-
         &__contacts {
             display: none;
-            /**align-self: flex-end;
-            margin-top: 30px;**/
         }
-
-        &__call-xs {
-            display: block;
-            text-align: center;
-            width: 40px;
-            height: 38px;
-            background-color: #c70101;
-            border-radius: 25%;
-            position: absolute;
-            right: 5px;
-            top: 0px;
-            i {
-                font-size: 35px;
-                color: #fff;
+        &__btn-xs {
+            width: 30px;
+            height: 20px;
+            position: relative;
+            &::before , &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+                position: absolute;
             }
-            
-        }
+            &::after {
+                bottom: 0;
+            }
+            &::before {
+                top: 0;
+            }
+            span {
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+                top: 9px;
+            }
+        } 
     }
-
     .promo {
         padding: 21px 0 20px 0;
         &__wrapper {
             margin-top: 45px;
         }
         &__header {
-            font-size: 25px;
-            line-height: 25px;
+            font-size: 24px;
         }
         &__subheader {
-            font-size: 14px;
+            font-size: 13px;
             line-height: 14px;
-            margin-top: 17px;
+            margin-top: 0px;
         }
 
         &__icons {
-            margin-top: 40px;
+            margin-top: 20px;
             display: block;
             width: auto;
         }

@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -11,7 +12,7 @@
        
     }
     &__logo {
-            width: 50px;
+            width: 40px;
             transition: 1s ease;
             &:hover {
                 scale: 1.1;
