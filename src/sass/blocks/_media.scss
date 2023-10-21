@@ -70,6 +70,37 @@
     .title {
         font-size: 24px;
     }
+    .carousel {
+        &__inner {
+            max-width: 100%;
+        }
+    }
+    .slick-slide img {
+        max-width: 100%;
+        height: 100%;
+    }
+    .slick-dots {
+        position: absolute;
+        transform: translateX(-50%) rotate(90deg);
+        bottom: 0;
+        left: 50%;
+        list-style: none;
+        li {
+            padding-left: 10px;
+        }
+        button {
+            font-size: 0;
+            padding: 0;
+            border: none;
+            background-color: $main-color;
+            width: 4px;
+            height: 20px;
+            border-radius: 7px;
+            Cursor: pointer;
+            transition: all .3s;
+        }
+
+    }
 }
 
 @media (max-width: 576px) {
@@ -151,5 +182,4 @@
             font-size: 18px;
         }
     }
-
 }
