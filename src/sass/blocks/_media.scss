@@ -55,6 +55,20 @@
     .feed-form {
         margin: 0 auto;
     }
+    .catalog {
+        padding-bottom: 50px;
+        &__tabs {
+            margin-top: 40px;
+        }
+        &__tab {
+            width: 200px;
+            font-size: 16px;
+        }
+        &__content {
+            justify-content: center;
+            gap: 30px;
+        }
+    }
 
 }
 
@@ -99,7 +113,11 @@
             Cursor: pointer;
             transition: all .3s;
         }
-
+    }
+    .catalog {
+        &__tab {
+            font-size: 15px;
+        }
     }
 }
 
@@ -180,6 +198,21 @@
     .consultation {
         &__descr {
             font-size: 18px;
+        }
+    }
+    .carousel {
+        padding: 50px 0;
+    }
+    .catalog {
+        &__tabs {
+            margin-top: 24px;
+        }
+        &__tab {
+            width: 86px;
+            padding: 2px;
+            height: 35px;
+            font-size: 12px;
+            line-height: normal;
         }
     }
 }
