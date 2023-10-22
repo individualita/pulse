@@ -69,6 +69,25 @@
             gap: 30px;
         }
     }
+    .review {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 45px;
+        }
+        &__block {
+            margin: 0 auto;
+        }
+        &__client {
+            text-align: center;
+        }
+        &_count {
+            text-align: center;
+        }
+        &__text {
+            padding: 0;
+        }
+    }
 
 }
 
