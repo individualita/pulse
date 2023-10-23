@@ -154,6 +154,18 @@
             font-size: 15px;
         }
     }
+    .footer {
+        &__info {
+            width: 300px;
+            border-radius: 1.3rem;
+            padding: 30px 20px 25px;
+            height: 210px;
+        }
+        &__addr {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -262,6 +274,18 @@
             width: 240px;
             margin: 15px auto 0;
             margin-top: 20px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 260px;
+            border-radius: 1.3rem;
+            padding: 30px 20px 25px;
+            height: 200px;
+        }
+        &__addr {
+            margin-bottom: 25px;
+            font-size: 17px;
         }
     }
 }
