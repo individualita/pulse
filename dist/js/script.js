@@ -117,4 +117,13 @@ $(document).ready(function(){
         return false;
     });
     new WOW().init();
+
+    //burger 
+    const burgerButton = document.querySelector('.header__btn');
+    const navMenu = document.querySelector('.header');
+
+    burgerButton.addEventListener('click', function() {
+        burgerButton.classList.toggle('active');
+    });
+
  });

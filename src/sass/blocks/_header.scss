@@ -52,7 +52,45 @@
         flex-direction: column;
         align-items: flex-end;
     }
-    &__call-xs {
+    &__btn {
         display: none;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        &::before , &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+        }
+        &::after {
+            bottom: 0;
+        }
+        &::before {
+            top: 0;
+        }
+        span {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            top: 9px;
+        }
+        &.active {// добавляем стили для активного состояния (при нажатии) 
+            &::before {
+                transform: rotate(45deg);
+                top: 9px;
+            }
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 9px;
+            }
+            span {
+                display: none;
+            }
+        }
     }
 }
+

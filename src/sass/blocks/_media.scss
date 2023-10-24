@@ -176,30 +176,8 @@
         &__contacts {
             display: none;
         }
-        &__btn-xs {
-            width: 30px;
-            height: 20px;
-            position: relative;
-            &::before , &::after {
-                content: "";
-                width: 100%;
-                height: 2px;
-                background-color: #fff;
-                position: absolute;
-            }
-            &::after {
-                bottom: 0;
-            }
-            &::before {
-                top: 0;
-            }
-            span {
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                background-color: #fff;
-                top: 9px;
-            }
+        &__btn {
+            display: inline-block;
         } 
     }
     .promo {
@@ -273,7 +251,6 @@
         &__links {
             width: 240px;
             margin: 15px auto 0;
-            margin-top: 20px;
         }
     }
     .footer {
