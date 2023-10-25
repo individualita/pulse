@@ -120,10 +120,11 @@ $(document).ready(function(){
     
     //burger 
     const burgerButton = document.querySelector('.header__btn');
-    
+    const navMenu = document.querySelector('.header__contacts');
 
     burgerButton.addEventListener('click', function() {
         burgerButton.classList.toggle('active');
+        navMenu.classList.toggle('header__contacts_active')
     });
 
  });

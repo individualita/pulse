@@ -41,6 +41,11 @@
         color: #FFF;
         font-size: 18px;
         font-weight: 700;
+        &_xs {
+            display: none;
+            color: #fff;
+            font-size: 18px;
+        }
         &:hover {
             color: #fff;
             text-decoration: none;
@@ -64,6 +69,7 @@
             height: 2px;
             background-color: #fff;
             position: absolute;
+            transition: all 0.3s ease 0s; //для плавности переключения
         }
         &::after {
             bottom: 0;
