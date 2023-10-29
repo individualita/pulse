@@ -170,6 +170,10 @@
 
 @media (max-width: 576px) {
     .header {
+        position: fixed;
+        left: 5px;
+        right: 5px;
+        top: 10px;
         &__official {
             display: none;
         }
