@@ -175,7 +175,6 @@
         }
         &__contacts {
             position: fixed;
-            z-index: 40;
             flex-direction: column;
             align-items: center;
             padding-top: 100px;
@@ -184,11 +183,12 @@
             left: -100%;
             width: 100vw;
             height: 100vh;
-            background-color: rgba(0,0,0, .8);
+            background-color: rgba(0,0,0, .9);
             transition: 0.6s;
             row-gap: 20px;
             &_active {
                 left: 0;
+                z-index: 9;
             }
         }
         &__phone {
@@ -293,6 +293,25 @@
         &__addr {
             margin-bottom: 25px;
             font-size: 17px;
+        }
+    }
+    .modal {
+        width: 280px;
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__descr {
+            font-size: 13px;
+            margin: 10px 0 10px;
+        }
+    }
+    .feed-form {
+        width: auto;
+    }
+    .button {
+        &_submit {
+            font-size: 13px;
+            height: 45px;
         }
     }
 }
