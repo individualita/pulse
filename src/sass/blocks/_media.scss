@@ -265,13 +265,15 @@
     }
     .catalog {
         &__tabs {
+            flex-direction: column;
             margin-top: 24px;
         }
         &__tab {
-            width: 86px;
-            padding: 2px;
+            margin-top: 8px;
+            width: 60%;
+            padding: 6px;
             height: 35px;
-            font-size: 12px;
+            font-size: 1rem;
             line-height: normal;
         }
     }
